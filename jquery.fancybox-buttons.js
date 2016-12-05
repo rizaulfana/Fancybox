@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0093)https://jqueryfancyboxbuttons2.googlecode.com/svn/branches/jquery.fancybox-buttons.js?v=1.0.5 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"> /*!
+ /*!
  * Buttons helper for fancyBox
  * version: 1.0.5 (Mon, 15 Oct 2012)
  * @requires fancyBox v2.0 or later
@@ -24,7 +22,7 @@
 		defaults : {
 			skipSingle : false, // disables if gallery contains single image
 			position   : 'top', // 'top' or 'bottom'
-			tpl        : '&lt;div id="fancybox-buttons"&gt;&lt;ul&gt;&lt;li&gt;&lt;a class="btnPrev" title="Previous" href="javascript:;"&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="btnPlay" title="Start slideshow" href="javascript:;"&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="btnNext" title="Next" href="javascript:;"&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="btnToggle" title="Toggle size" href="javascript:;"&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="btnClose" title="Close" href="javascript:;"&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;'
+			tpl        : '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="Previous" href="javascript:;"></a></li><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnNext" title="Next" href="javascript:;"></a></li><li><a class="btnToggle" title="Toggle size" href="javascript:;"></a></li><li><a class="btnClose" title="Close" href="javascript:;"></a></li></ul></div>'
 		},
 
 		list : null,
@@ -33,7 +31,7 @@
 		beforeLoad: function (opts, obj) {
 			//Remove self if gallery do not have at least two items
 
-			if (opts.skipSingle &amp;&amp; obj.group.length &lt; 2) {
+			if (opts.skipSingle && obj.group.length < 2) {
 				obj.helpers.buttons = false;
 				obj.closeBtn = true;
 
@@ -72,14 +70,14 @@
 			}
 
 			//Prev
-			if (obj.index &gt; 0 || obj.loop) {
+			if (obj.index > 0 || obj.loop) {
 				buttons.prev.removeClass('btnDisabled');
 			} else {
 				buttons.prev.addClass('btnDisabled');
 			}
 
 			//Next / Play
-			if (obj.loop || obj.index &lt; obj.group.length - 1) {
+			if (obj.loop || obj.index < obj.group.length - 1) {
 				buttons.next.removeClass('btnDisabled');
 				buttons.play.removeClass('btnDisabled');
 
@@ -122,4 +120,3 @@
 	};
 
 }(jQuery));
-</pre></body></html>
