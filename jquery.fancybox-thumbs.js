@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0082)https://jqueryfancyboxthumbs2.googlecode.com/svn/jquery.fancybox-thumbs.js?v=1.0.7 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"> /*!
+ /*!
  * Thumbnail helper for fancyBox
  * version: 1.0.7 (Mon, 01 Oct 2012)
  * @requires fancyBox v2.0 or later
@@ -33,7 +31,7 @@
 					href = $(item.element).find('img').attr('src');
 				}
 
-				if (!href &amp;&amp; item.type === 'image' &amp;&amp; item.href) {
+				if (!href && item.type === 'image' && item.href) {
 					href = item.href;
 				}
 
@@ -55,12 +53,12 @@
 			//Build list structure
 			list = '';
 
-			for (var n = 0; n &lt; obj.group.length; n++) {
-				list += '&lt;li&gt;&lt;a style="width:' + thumbWidth + 'px;height:' + thumbHeight + 'px;" href="javascript:jQuery.fancybox.jumpto(' + n + ');"&gt;&lt;/a&gt;&lt;/li&gt;';
+			for (var n = 0; n < obj.group.length; n++) {
+				list += '<li><a style="width:' + thumbWidth + 'px;height:' + thumbHeight + 'px;" href="javascript:jQuery.fancybox.jumpto(' + n + ');"></a></li>';
 			}
 
-			this.wrap = $('&lt;div id="fancybox-thumbs"&gt;&lt;/div&gt;').addClass(opts.position).appendTo('body');
-			this.list = $('&lt;ul&gt;' + list + '&lt;/ul&gt;').appendTo(this.wrap);
+			this.wrap = $('<div id="fancybox-thumbs"></div>').addClass(opts.position).appendTo('body');
+			this.list = $('<ul>' + list + '</ul>').appendTo(this.wrap);
 
 			//Load each thumbnail
 			$.each(obj.group, function (i) {
@@ -70,7 +68,7 @@
 					return;
 				}
 
-				$("&lt;img /&gt;").load(function () {
+				$("<img />").load(function () {
 					var width  = this.width,
 						height = this.height,
 						widthRatio, heightRatio, parent;
@@ -85,8 +83,8 @@
 
 					parent = that.list.children().eq(i).find('a');
 
-					if (widthRatio &gt;= 1 &amp;&amp; heightRatio &gt;= 1) {
-						if (widthRatio &gt; heightRatio) {
+					if (widthRatio >= 1 && heightRatio >= 1) {
+						if (widthRatio > heightRatio) {
 							width  = Math.floor(width / heightRatio);
 							height = thumbHeight;
 
@@ -118,7 +116,7 @@
 
 		beforeLoad: function (opts, obj) {
 			//Remove self if gallery do not have at least two items
-			if (obj.group.length &lt; 2) {
+			if (obj.group.length < 2) {
 				obj.helpers.thumbs = false;
 
 				return;
@@ -161,4 +159,4 @@
 		}
 	}
 
-}(jQuery));</pre></body></html>
+}(jQuery));
