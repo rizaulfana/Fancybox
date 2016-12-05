@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0080)https://jqueryfancyboxmedia2.googlecode.com/svn/jquery.fancybox-media.js?v=1.0.6 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">/*!
+/*!
  * Media helper for fancyBox
  * version: 1.0.6 (Fri, 14 Jun 2013)
  * @requires fancyBox v2.0 or later
@@ -60,9 +58,9 @@
  *          http://instagr.am/p/IejkuUGxQn/
  *          http://instagram.com/p/IejkuUGxQn/
  *      Google maps
- *          http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&amp;t=h&amp;z=17
- *          http://maps.google.com/?ll=48.857995,2.294297&amp;spn=0.007666,0.021136&amp;t=m&amp;z=16
- *          http://maps.google.com/?ll=48.859463,2.292626&amp;spn=0.000965,0.002642&amp;t=m&amp;z=19&amp;layer=c&amp;cbll=48.859524,2.292532&amp;panoid=YJ0lq28OOy3VT2IqIuVY0g&amp;cbp=12,151.58,,0,-15.56
+ *          http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17
+ *          http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
+ *          http://maps.google.com/?ll=48.859463,2.292626&spn=0.000965,0.002642&t=m&z=19&layer=c&cbll=48.859524,2.292532&panoid=YJ0lq28OOy3VT2IqIuVY0g&cbp=12,151.58,,0,-15.56
  */
 (function ($) {
 	"use strict";
@@ -81,7 +79,7 @@
 			});
 
 			if (params.length) {
-				url += ( url.indexOf('?') &gt; 0 ? '&amp;' : '?' ) + params;
+				url += ( url.indexOf('?') > 0 ? '&' : '?' ) + params;
 			}
 
 			return url;
@@ -91,7 +89,7 @@
 	F.helpers.media = {
 		defaults : {
 			youtube : {
-				matcher : /(youtube\.com|youtu\.be|youtube-nocookie\.com)\/(watch\?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&amp;list=(.*)).*/i,
+				matcher : /(youtube\.com|youtu\.be|youtube-nocookie\.com)\/(watch\?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*)).*/i,
 				params  : {
 					autoplay    : 1,
 					autohide    : 1,
@@ -160,7 +158,7 @@
 				matcher : /maps\.google\.([a-z]{2,3}(\.[a-z]{2})?)\/(\?ll=|maps\?)(.*)/i,
 				type : 'iframe',
 				url  : function( rez ) {
-					return '//maps.google.' + rez[1] + '/' + rez[3] + '' + rez[4] + '&amp;output=' + (rez[4].indexOf('layer=c') &gt; 0 ? 'svembed' : 'embed');
+					return '//maps.google.' + rez[1] + '/' + rez[3] + '' + rez[4] + '&output=' + (rez[4].indexOf('layer=c') > 0 ? 'svembed' : 'embed');
 				}
 			}
 		},
@@ -198,4 +196,4 @@
 		}
 	};
 
-}(jQuery));</pre></body></html>
+}(jQuery));
