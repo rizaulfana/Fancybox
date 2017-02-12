@@ -2,7 +2,7 @@ Daftar Alamat Tombol
 
 1) Edit alamat lokasi gambar diupload
 
-jquery.fancybox.css
+jquery.fancybox.css dan 
 jquery.fancybox-buttons.css
 
 http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_loading_zpslste4jy6.gif
