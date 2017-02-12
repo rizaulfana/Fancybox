@@ -28,3 +28,5 @@ https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox-thumbs.js
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox.pack.js
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.mousewheel-3.0.6.pack.js
 
+Cara Pemasangan Kode
+http://fancyapps.com/fancybox/
