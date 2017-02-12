@@ -9,14 +9,14 @@ http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_sprite_zpshjrbs
 http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_overlay_zpslfedc4ne.png
 http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_buttons_zpszu4s3ckw.png
 http://i58.photobucket.com/albums/g264/menambangbitcoin/blank_zpszsvpwz1m.gif
-================================================================================================
+
 
 css
 
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox-buttons.css
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox-thumbs.css
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox.css
-================================================================================================
+
 
 JS
 
@@ -27,4 +27,4 @@ https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox-media.js
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox-thumbs.js
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.fancybox.pack.js
 https://cdn.rawgit.com/rizaulfana/Fancybox/Catatan/jquery.mousewheel-3.0.6.pack.js
-================================================================================================
+
