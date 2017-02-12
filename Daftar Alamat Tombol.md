@@ -1,6 +1,7 @@
 Daftar Alamat Tombol
 
 1) Edit alamat lokasi gambar diupload
+
 jquery.fancybox.css
 jquery.fancybox-buttons.css
 
