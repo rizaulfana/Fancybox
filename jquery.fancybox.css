@@ -268,8 +268,7 @@
 	}
 
 	#fancybox-loading div {
-		background-image: url('http://photouploads.com/images/8c78b3.gif
-');
+		background-image: url('http://photouploads.com/images/8c78b3.gif');
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
