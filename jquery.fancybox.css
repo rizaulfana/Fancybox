@@ -76,7 +76,7 @@
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url('http://i1081.photobucket.com/albums/j345/riza_vk/Fancy%20Box/fancybox_sprite.png');
+	background-image: url('http://photouploads.com/images/d93d08.png');
 }
 
 #fancybox-loading {
@@ -94,7 +94,7 @@
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('http://i1081.photobucket.com/albums/j345/riza_vk/Fancy%20Box/fancybox_loading.gif') center center no-repeat;
+	background: url('http://photouploads.com/images/5940c9.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -114,7 +114,7 @@
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url('http://i1081.photobucket.com/albums/j345/riza_vk/Fancy%20Box/blank.gif'); /* helps IE */
+	background: transparent url('http://photouploads.com/images/7d6ca4.gif'); /* helps IE */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
@@ -184,7 +184,7 @@
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('http://i1081.photobucket.com/albums/j345/riza_vk/Fancy%20Box/fancybox_overlay.png');
+	background: url('http://photouploads.com/images/bebe8c.png');
 }
 
 .fancybox-overlay-fixed {
@@ -263,12 +263,12 @@
 	   only screen and (min-device-pixel-ratio: 1.5){
 
 	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-		background-image: url('http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_sprite2x_zpsvofjxh8i.png');
+		background-image: url('http://photouploads.com/images/480dff.png');
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 
 	#fancybox-loading div {
-		background-image: url('http://i58.photobucket.com/albums/g264/menambangbitcoin/fancybox_loading2x_zpshfi1agmw.gif
+		background-image: url('http://photouploads.com/images/8c78b3.gif
 ');
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
